@@ -7,12 +7,32 @@
 body {
     @apply font-poppins text-white
 }
-
+.text-theme {
+    background: #D500F9;
+    background: linear-gradient(to bottom, #D500F9 0%, #8122DB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
 .btn {
-    @apply transition duration-300
+    @apply transition-all duration-300
 }
 
-.btn-white { 
+.btn-theme {
+    background: #2962ff;
+    /* Solid color */
+    background-image: linear-gradient(75deg, #00bce6, #2962ff 50.31%, #d500f9);
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    @apply text-white
+}
+
+.btn-theme:hover {
+    background-position: 0 0;
+    background-blend-mode: lighten;
+}
+
+.btn-white {
     @apply text-neutral-950 bg-neutral-100 border border-neutral-100
 }
 
@@ -20,7 +40,7 @@ body {
     @apply bg-neutral-200 border border-neutral-200 scale-105
 }
 
-.btn-outline-white { 
+.btn-outline-white {
     @apply text-white bg-neutral-950 border border-neutral-700
 }
 
@@ -32,6 +52,27 @@ body {
     @apply hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]
 }
 
-.my-hero p {
-    @apply text-base sm:text-lg font-light text-neutral-300
+.my-main .api-logo {
+    @apply w-24 rounded-full mx-auto mb-5 drop-shadow select-none border-2 border-neutral-700
+}
+
+.my-main .api-code {
+    @apply py-3 px-5 bg-black border-2 border-neutral-700 rounded-full mb-10 drop-shadow
+}
+
+.my-main .api-code span {
+    @apply text-primary font-medium
+}
+
+.my-main .my-card {
+    background: linear-gradient(155deg, rgb(24, 24, 24) 16.07%, rgba(24, 24, 24, 0) 125%);
+    @apply border border-neutral-700 rounded-lg p-6 flex flex-col items-center transition duration-300 hover:scale-105
+}
+
+.my-main .my-card .my-card-text h5 {
+    @apply text-center font-semibold mt-1 mb-2 pointer-events-none
+}
+
+.my-main .my-card .my-card-text p {
+    @apply text-neutral-300 text-sm pointer-events-none
 }
