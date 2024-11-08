@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "react-router-dom"
 
 import logo from '../../../public/logoapi_light.png'
-
 import logo_x from '../../../public/icons/x.png'
 import logo_google from '../../../public/icons/goog.png'
+
+import ContactBtn from "./ContactBtn"
+import DocsBtn from "./DocsBtn"
 
 const url = import.meta.env.VITE_API_URL
 
@@ -95,9 +96,8 @@ const Main = () => {
                 <h3 className='text-center text-2xl sm:text-4xl font-semibold'>Adding Logo For Free Today</h3>
             </div>
             <div className="flex justify-center mb-20 sm:mb-32">
-                <Link className="btn btn-outline-white h-10 max-h-10 min-h-10 text-sm font-normal mr-2 glow-white">Get In Touch</Link>
-                <Link className="btn btn-white h-10 max-h-10 min-h-10 text-sm font-normal glow-white">Go to docs <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" /></Link>
-            </div>
+                <ContactBtn />
+                <DocsBtn /></div>
         </div>
     )
 }
