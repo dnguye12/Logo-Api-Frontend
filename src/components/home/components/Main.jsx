@@ -18,7 +18,7 @@ const Main = () => {
                 <div>
                     <img className=' api-logo' src={logo} alt="Logo API" />
                     <div className='api-code'>
-                        <p>{url}<span>?url=logoapi.com</span></p>
+                        <p>{url}<span>?url=logo-api.com</span></p>
                     </div>
                 </div>
 
